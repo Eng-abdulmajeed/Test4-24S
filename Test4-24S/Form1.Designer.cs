@@ -40,68 +40,82 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(13, 14);
+            textBox1.Location = new Point(19, 23);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(132, 32);
+            textBox1.Size = new Size(187, 45);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 14F);
-            button1.Location = new Point(29, 63);
+            button1.Location = new Point(41, 105);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(100, 42);
+            button1.Size = new Size(143, 70);
             button1.TabIndex = 2;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 14F);
-            button2.Location = new Point(29, 126);
+            button2.Location = new Point(41, 210);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(100, 42);
+            button2.Size = new Size(143, 70);
             button2.TabIndex = 2;
             button2.Text = "Remove";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 14F);
-            textBox2.Location = new Point(185, 22);
+            textBox2.Location = new Point(264, 37);
+            textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(132, 32);
+            textBox2.Size = new Size(187, 45);
             textBox2.TabIndex = 1;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI", 14F);
-            textBox3.Location = new Point(185, 60);
+            textBox3.Location = new Point(264, 100);
+            textBox3.Margin = new Padding(4, 5, 4, 5);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(132, 32);
+            textBox3.Size = new Size(187, 45);
             textBox3.TabIndex = 1;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox4
             // 
             textBox4.Font = new Font("Segoe UI", 14F);
-            textBox4.Location = new Point(185, 98);
+            textBox4.Location = new Point(264, 163);
+            textBox4.Margin = new Padding(4, 5, 4, 5);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(132, 32);
+            textBox4.Size = new Size(187, 45);
             textBox4.TabIndex = 1;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 14F);
-            textBox5.Location = new Point(185, 136);
+            textBox5.Location = new Point(264, 227);
+            textBox5.Margin = new Padding(4, 5, 4, 5);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(132, 32);
+            textBox5.Size = new Size(187, 45);
             textBox5.TabIndex = 1;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(329, 191);
+            ClientSize = new Size(470, 318);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox5);
@@ -109,6 +123,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
